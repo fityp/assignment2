@@ -1,0 +1,71 @@
+Git Lab Tutorials access October 9, 2020
+GitHub Account created March 21, 2010
+
+https://github.com/fityp/assignment2
+
+1.
+C:\Users\dusti\code\assignment2>git add docs/
+
+C:\Users\dusti\code\assignment2>git commit -m="Added docs folder and status.txt per assignment"
+[master a5c2281] =Added docs folder and status.txt per assignment
+ 1 file changed, 5 insertions(+)
+ create mode 100644 docs/status.txt
+
+C:\Users\dusti\code\assignment2>git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 813 bytes | 813.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/fityp/assignment2.git
+   3d9d703..a5c2281  master -> master
+
+C:\Users\dusti\code\assignment2>
+
+2.
+C:\Users\dusti\code\assignment2>git rev-list --count HEAD
+25
+(Its 25 becuase I needed to roll back some commits in order to make the expected ouput)
+
+3.
+C:\Users\dusti\code\assignment2>git log -1 README.md
+commit eadac199b04936727b7e8b88c5bff85ac139f743
+Author: Dustin Fitzpatrick <dustin.fitzpatrick@disney.com>
+Date:   Fri Oct 9 21:33:32 2020 -0400
+
+    Update README.md
+
+    Updated information files
+
+    The information files have been updated to describe the current state of the repository.
+
+    Repository owner information added to README.md
+
+4.
+Branching allows multiple developers and multiple feature to be worked on simultaniously with isolation.
+Branching also allows for compartmentalized merging so that regressions and conflicts can be handled easier.
+
+5.
+Git status shows staged changes and the current status of the repository.
+Git log allows the viewing of history.
+
+6.
+git log --follow Vehicle.h
+
+7.
+git log --all --grep="file"
+
+8.
+Inheritance - The building of a new object based on another object.  By doing this, the new object gains capabilities that are part of the based object.
+
+Polymorphism - This is the concept that different objects can be accessed in a common way.  
+
+Encapsulation - The is the method of restricting or hiding direct access to an objects data.  Access to this data can (as an example) through methods such as setters and getters.
+
+9.
+The main difference is the additional layer of merging that happens by Lieutenants before code is merged to the blessed repo.  
+
+10.
+The team would benefit from Dictator and Lieutenants because the given volume of merges would be a fraction of the whole team.  This distributes the work of managing conflicts to multiple people.
